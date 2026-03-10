@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #e8eeea;
+    color: #111111;
+    overflow: hidden;
+  }
+  
+  .page {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .page.active {
+    display: flex;
+
+    
+  }
+  
+  .logo{
+    width: 360px;   /* 크기 조절 */
+    height: auto;
+    display: block;
+    margin: 0 auto 28px auto;
+  }
+
+  #page1 {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px 60px;
+    overflow-y: auto;
+  }
+  
+  .wrap {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0 0 28px 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  
+  .draw-box {
+    width: 320px;
+    margin: 0 auto 22px auto;
+  }
+  
+  #drawCanvas {
+    width: 320px;
+    height: 320px;
+    border: 2px solid #111111;
+    background: #ffffff;
+    cursor: crosshair;
+    display: block;
+  }
+  
+  .palette {
+    display:grid;
+    grid-template-columns: repeat(4, 40px);
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+  }
+
+   .color-btn{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:2px solid rgb(255, 255, 255);
+    cursor:pointer;
+  }
+  
+  .color-btn:hover {
+    transform: scale(1.08);
+  }
+  
+  .color-btn.active {
+    box-shadow: 0 0 12px #fb00b0;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: 2px solid #111111;
+    background: #ffffff;
+    color: #111111;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+  
+  button:hover {
+    background: #111111;
+    color: #ffffff;
+  }
+  
+  #page2 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+  }
+  
+  #outputCanvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #ffffff;
+  }
+  
+  #backBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border-radius: 999px;
+    font-size: 2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

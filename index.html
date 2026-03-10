@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Droste Effect: Infinite Repetition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="page1" class="page active">
+    <div class="wrap">
+      <img src="logo.png" class="logo" alt="">
+
+      <div class="draw-box">
+        <canvas id="drawCanvas" width="320" height="320"></canvas>
+      </div>
+
+      <div class="palette">
+        <button class="color-btn active" data-color="#ff2b2b" style="background:#ff2b2b;" aria-label="red"></button>
+        <button class="color-btn" data-color="#ff8c00" style="background:#ff8c00;" aria-label="orange"></button>
+        <button class="color-btn" data-color="#ffd400" style="background:#ffd400;" aria-label="yellow"></button>
+        <button class="color-btn" data-color="#20c933" style="background:#20c933;" aria-label="green"></button>
+        <button class="color-btn" data-color="#1976ff" style="background:#1976ff;" aria-label="blue"></button>
+        <button class="color-btn" data-color="#243caa" style="background:#243caa;" aria-label="navy"></button>
+        <button class="color-btn" data-color="#7d2cff" style="background:#7d2cff;" aria-label="purple"></button>
+        <button class="color-btn" data-color="#ff5cb8" style="background:#ff5cb8;" aria-label="pink"></button>
+      </div>
+
+      <div class="controls">
+        <button id="doneBtn">Done</button>
+        <button id="clearBtn">Clear Drawing</button>
+      </div>
+    </div>
+  </section>
+
+\
+  <section id="page2" class="page">
+    <button id="backBtn" aria-label="Go back">&#8592;</button>
+    <canvas id="outputCanvas"></canvas>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
